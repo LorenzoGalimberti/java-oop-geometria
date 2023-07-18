@@ -35,4 +35,33 @@ public class Rettangolo {
         return  area;
     }
 
+    // disegna
+
+    void disegna(){
+        int base=this.base;
+        int altezza=this.altezza;
+        // prima riga
+        for (int i = 0; i < base; i++) {
+            System.out.print("o");
+        }
+        System.out.println();
+
+        // righe interne
+        for (int i = 0; i < altezza - 2; i++) {
+            //primo o lo fa sempre
+            System.out.print("o");
+            //spazi vuoti
+            for (int j = 0; j < base - 2; j++) {
+                System.out.print(" ");
+            }
+            // ultimo o lo fa sempre
+            System.out.println("o");
+        }
+
+        // ultima
+        for (int i = 0; i < base; i++) {
+            System.out.print("o");
+        }
+    }
+
 }

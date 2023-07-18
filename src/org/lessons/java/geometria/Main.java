@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
-        // chiediamo all utente
+        // chiediamo all utente i valori di input
         System.out.print("Inserisci la base : ");
         int baseInput=Integer.parseInt(scan.nextLine());
         System.out.print("Inserisci l'altezza : ");
@@ -21,13 +21,16 @@ public class Main {
         System.out.println( "Base : "+rettangolo.base);
         System.out.println("Altezza : "+rettangolo.altezza);
 
+
+
+        // chiamata dei metodi
         int perimetro= rettangolo.calcolaPerimetro();
         System.out.println("Perimetro : "+ perimetro);
 
         int area= rettangolo.calcolaArea();
         System.out.println("Area : "+ area);
 
-
+        rettangolo.disegna();
         scan.close();
     }
 }
