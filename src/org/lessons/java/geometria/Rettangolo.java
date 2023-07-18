@@ -58,7 +58,7 @@ public class Rettangolo {
             System.out.println("o");
         }
 
-        // ultima
+        // ultima riga
         for (int i = 0; i < base; i++) {
             System.out.print("o");
         }
